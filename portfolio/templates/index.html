@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kathi Shirisha — Python Developer</title>
+
+  <!-- Google Fonts: Syne (display) + DM Mono (code/accent) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <!-- Logo / name brand -->
+      <a class="nav-logo" href="#hero">KS<span class="dot">.</span></a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about"    onclick="closeMobile()">About</a>
+      <a href="#skills"   onclick="closeMobile()">Skills</a>
+      <a href="#projects" onclick="closeMobile()">Projects</a>
+      <a href="#contact"  onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero">
+    <!-- Animated grid background -->
+    <div class="hero-grid"></div>
+
+    <!-- Floating orbs for depth -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content">
+      <!-- Small label above name -->
+      <p class="hero-label">
+        <span class="label-line"></span>
+        Hello, world
+        <span class="label-line"></span>
+      </p>
+
+      <!-- Main heading -->
+      <h1 class="hero-name">
+        <span class="name-line reveal-up delay-1">Kathi</span>
+        <span class="name-line accent reveal-up delay-2">Shirisha</span>
+      </h1>
+
+      <!-- Role / tagline -->
+      <p class="hero-role reveal-up delay-3">
+        <span class="role-icon">⌨</span>
+        Aspiring Python Developer
+      </p>
+
+      <!-- Short pitch -->
+      <p class="hero-pitch reveal-up delay-4">
+        Building clean, efficient backends and bringing ideas to life with Python &amp; Flask.
+      </p>
+
+      <!-- CTA buttons -->
+      <div class="hero-cta reveal-up delay-5">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact"  class="btn btn-ghost">Get in Touch</a>
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="scroll-hint reveal-up delay-6">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-num">01</span> About Me
+      </h2>
+
+      <div class="about-grid">
+        <!-- Left — avatar card -->
+        <div class="about-avatar-wrap fade-in">
+          <div class="avatar-card">
+            <div class="avatar-initials">KS</div>
+            <div class="avatar-glow"></div>
+          </div>
+          <!-- Quick stats -->
+          <div class="stat-chips">
+            <div class="chip"><span>🐍</span> Python Developer</div>
+            <div class="chip"><span>🎓</span> Anurag engineering college</div>
+            <div class="chip"><span>🔍</span> Open to Internships</div>
+          </div>
+        </div>
+
+        <!-- Right — text -->
+        <div class="about-text fade-in">
+          <p>
+            Hi! I'm <strong>Kathi Shirisha</strong>, a Computer Science student at Anurag Engineering College,
+            kodad, with a passion for building real-world applications using Python and Flask.
+            I enjoy turning ideas into working software — clean, readable, and purposeful.
+          </p>
+          <p>
+            I've built projects like an <strong>Online Voting System</strong> that handles secure voter
+            registration and result display, and this very portfolio as a full-stack web app.
+            Every project I build teaches me something new about how the web works under the hood.
+          </p>
+          <p>
+            I'm actively looking for internship opportunities where I can contribute, grow, and collaborate
+            with experienced developers. Outside of coding, I enjoy exploring new tech topics and sharpening
+            my problem-solving skills.
+          </p>
+
+          <!-- Highlights -->
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="hl-icon">💡</span>
+              <div>
+                <strong>Problem Solver</strong>
+                <p>I enjoy debugging, optimising, and finding creative solutions.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-icon">🚀</span>
+              <div>
+                <strong>Fast Learner</strong>
+                <p>New technologies excite me — I pick them up quickly and apply them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-num">02</span> Skills
+      </h2>
+
+      <p class="section-sub">Technologies I work with on a daily basis.</p>
+
+      <!-- Skill cards grid — each card has a logo-emoji, name, and animated bar -->
+      <div class="skills-grid">
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🌶</div>
+          <h3>Flask</h3>
+          <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML</h3>
+          <div class="skill-bar"><div class="skill-fill" data-level="82"></div></div>
+          <span class="skill-pct">82%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🎨</div>
+          <h3>CSS</h3>
+          <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript <small style="font-size:0.65rem;opacity:0.6">(Basics)</small></h3>
+          <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+          <span class="skill-pct">65%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🔀</div>
+          <h3>Git &amp; GitHub</h3>
+          <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+          <span class="skill-pct">78%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🗄</div>
+          <h3>SQL <small style="font-size:0.65rem;opacity:0.6">(Basics)</small></h3>
+          <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+          <span class="skill-pct">70%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-num">03</span> Projects
+      </h2>
+      <p class="section-sub">Fetched live from the SQLite database via the Flask API.</p>
+
+      <!-- Loading state shown while fetch() is in-flight -->
+      <div id="projects-loading" class="loading-state">
+        <div class="spinner"></div>
+        <p>Loading projects…</p>
+      </div>
+
+      <!-- Cards injected by JavaScript after GET /projects -->
+      <div id="projects-grid" class="projects-grid" style="display:none;"></div>
+
+      <!-- Error state -->
+      <div id="projects-error" class="error-state" style="display:none;">
+        <p>⚠️ Could not load projects. Please try again later.</p>
+      </div>
+
+      <!-- ── Add Project Form ───────────────────────────────── -->
+      <div class="add-project-wrap">
+        <button class="btn btn-ghost" id="toggleFormBtn" onclick="toggleForm()">
+          + Add a Project
+        </button>
+
+        <div id="addProjectForm" class="project-form" style="display:none;">
+          <h3>Add New Project</h3>
+
+          <div class="form-group">
+            <label for="proj-title">Project Title *</label>
+            <input type="text" id="proj-title" placeholder="e.g. Weather Dashboard" />
+          </div>
+
+          <div class="form-group">
+            <label for="proj-desc">Description *</label>
+            <textarea id="proj-desc" rows="3" placeholder="What does this project do?"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="proj-tech">Tech Stack *</label>
+            <input type="text" id="proj-tech" placeholder="e.g. Python, Flask, SQLite" />
+          </div>
+
+          <div class="form-group">
+            <label for="proj-github">GitHub URL</label>
+            <input type="url" id="proj-github" placeholder="https://github.com/…" />
+          </div>
+
+          <div class="form-group">
+            <label for="proj-live">Live URL</label>
+            <input type="url" id="proj-live" placeholder="https://…" />
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" onclick="submitProject()">Save Project</button>
+            <button class="btn btn-ghost"   onclick="toggleForm()">Cancel</button>
+          </div>
+
+          <!-- Inline feedback message -->
+          <p id="form-msg" class="form-msg"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-num">04</span> Get in Touch
+      </h2>
+      <p class="section-sub">
+        I'm open to internships, collaborations, and entry-level opportunities.
+        Don't hesitate to reach out through any of the channels below!
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- Primary Email -->
+        <a class="contact-card fade-in" href="mailto:ks1186561@gmail.com">
+          <div class="contact-icon">✉</div>
+          <h3>Gmail</h3>
+          <p>ks1186561@gmail.com</p>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <!-- College Email -->
+        <a class="contact-card fade-in" href="mailto:24c11a05e2@anurag.ac.in">
+          <div class="contact-icon">🎓</div>
+          <h3>College Email</h3>
+          <p>24c11a05e2@anurag.ac.in</p>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <!-- LinkedIn card -->
+        <a class="contact-card fade-in" href="https://www.linkedin.com/in/kathi-shirisha-8697a4381" target="_blank" rel="noopener">
+          <div class="contact-icon">in</div>
+          <h3>LinkedIn</h3>
+          <p>kathi-shirisha-8697a4381</p>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <!-- GitHub card -->
+        <a class="contact-card fade-in" href="https://github.com/ks1186561-cyber" target="_blank" rel="noopener">
+          <div class="contact-icon">⌥</div>
+          <h3>GitHub</h3>
+          <p>ks1186561-cyber</p>
+          <span class="contact-arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-name">Kathi Shirisha</p>
+      <p class="footer-copy">
+        Built with <span class="heart">♥</span> using Python &amp; Flask ·
+        <span id="year"></span>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- Main JavaScript -->
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

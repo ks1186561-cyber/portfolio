@@ -1,0 +1,12 @@
+# render.yaml — Render deployment configuration
+# Docs: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: kathi-shirisha-portfolio
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: FLASK_DEBUG
+        value: "false"

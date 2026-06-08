@@ -1,0 +1,5 @@
+# ── Python dependencies for Kathi Shirisha's portfolio ────────
+# Install with: pip install -r requirements.txt
+
+flask==3.0.3          # Web framework
+gunicorn==22.0.0      # Production WSGI server (used by Render)
