@@ -69,19 +69,6 @@ Open **http://localhost:5000** in your browser.
 
 ---
 
-## Deploy to Render (free tier)
-
-1. Push this project to a GitHub repo.
-2. Go to [render.com](https://render.com) → **New Web Service**.
-3. Connect your GitHub repo.
-4. Render will auto-detect `render.yaml` — click **Deploy**.
-5. Your site will be live at `https://<your-service>.onrender.com`.
-
-> **Note:** The SQLite database resets on each Render deploy because the file system is ephemeral on the free tier.  
-> For a persistent database consider upgrading to a paid plan or using Render's managed PostgreSQL.
-
----
-
 ## Tech Stack
 
 - **Backend:** Python 3, Flask
